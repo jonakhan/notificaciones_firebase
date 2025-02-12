@@ -1,0 +1,51 @@
+// android/app/build.gradle
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.firebase_login"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId = "com.example.firebase_login"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+// Agrega las dependencias de Firebase aquí
+dependencies {
+    implementation platform("com.google.firebase:firebase-bom:33.9.0") // Asegúrate de que esta línea esté presente
+    implementation 'com.google.firebase:firebase-analytics' // O cualquier otro servicio de Firebase que estés utilizando
+    implementation platform('com.google.firebase:firebase-bom:latest_version')
+    implementation 'com.google.firebase:firebase-messaging'
+}
+
+// Al final del archivo, aplica el plugin de Google Services
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "876286441478",
+    "project_id": "login-firebase-b3070",
+    "storage_bucket": "login-firebase-b3070.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876286441478:android:10f2136685f903d5206b87",
+        "android_client_info": {
+          "package_name": "com.example.firebase_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6diyEPVzkgrDEjjWiWpHyZfGRGygMABs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876286441478:android:990721c8f7b8d0fa206b87",
+        "android_client_info": {
+          "package_name": "com.example.login_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6diyEPVzkgrDEjjWiWpHyZfGRGygMABs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876286441478:android:115e61958a828e40206b87",
+        "android_client_info": {
+          "package_name": "com.example.login_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6diyEPVzkgrDEjjWiWpHyZfGRGygMABs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
